@@ -6,6 +6,7 @@ body {
 }
 
 .Container {
+    height: 100vh;
     position: relative;
     z-index: 1;
 
@@ -16,6 +17,7 @@ body {
 }
 
 .bg-text {
+    height: 100vh !important;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -34,6 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -160,20 +163,24 @@ body {
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+   
 }
 
 .widthBox {
     width: 340px;
+    /* padding-top: 20px; */
+    margin-top: 20px;
 }
 
 .myClass {
     color: #18aded;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 10px 8px;
     border-bottom: 0.75px solid #f7f7f7;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .check {
@@ -182,7 +189,11 @@ body {
 }
 
 .bodyContent {
+    /* background-color: #f7f7f7; */
+}
+.thirdContainer{
     background-color: #f7f7f7;
+    height: 100vh;
 }
 
 .popupContainer {
