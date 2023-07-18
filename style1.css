@@ -18,6 +18,7 @@ body {
 
 .bg-text {
     height: 100vh !important;
+    overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -141,12 +142,13 @@ body {
 }
 
 .midContainer {
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     gap: 10px;
+    overflow-x: hidden;
 }
 
 .flexbody {
@@ -169,7 +171,8 @@ body {
 .widthBox {
     width: 340px;
     /* padding-top: 20px; */
-    margin-top: 20px;
+    margin-left: 200px;
+    
 }
 
 .myClass {
@@ -198,7 +201,7 @@ body {
 
 .popupContainer {
     background-color: #f7f7f7;
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     border-radius: 5px;
     min-height: 200px;
