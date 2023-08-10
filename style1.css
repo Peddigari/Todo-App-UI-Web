@@ -18,13 +18,13 @@ body {
 }
 
 .bg-text {
-    height: 100vh !important;
+    /* height: 100vh !important; */
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     border: 3px solid #f1f1f1;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     /* bottom: -50%; */
@@ -88,7 +88,7 @@ body {
     color: #f7f7f7;
     background-color: #18aded;
     /* font-size: ; */
-    width: 150px;
+    max-width: 150px;
     height: 35px;
     border: none;
     outline: none;
@@ -139,7 +139,10 @@ body {
 }
 
 .link {
+    /* width: 100%; */
     text-decoration: none;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .midContainer {
@@ -203,6 +206,7 @@ body {
 .popupContainer {
     background-color: #f7f7f7;
     width: 30%;
+    min-width:200px;
     margin: 0 auto;
     border-radius: 5px;
     min-height: 200px;
@@ -220,4 +224,31 @@ body {
     min-width: 300px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width:350px) and (max-width:600px) {
+    .widthBox{
+        margin-left: 0px;
+    }
+    .secondaryNav {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .myClass {
+        color: #18aded;
+        display: block;
+        /* flex-direction: column;
+        justify-content: center; */
+        /* align-items: center; */
+        padding: 10px 8px;
+        border-bottom: 0.75px solid #f7f7f7;
+        font-weight: 600;
+    }
+}
+
+@media screen  and (max-width:900px) {
+    .widthBox{
+        margin-left: 0px;
+    }
 }
